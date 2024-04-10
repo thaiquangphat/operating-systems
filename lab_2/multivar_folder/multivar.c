@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <stdlib.h>
 
 int glo_init_data = 99;
 int glo_noninit_data;
