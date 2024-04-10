@@ -1,5 +1,5 @@
 
-hello:     file format elf64-x86-64
+hello.o:     file format elf64-x86-64
 
 Contents of section .text:
  0000 f30f1efa 554889e5 488d0500 00000048  ....UH..H......H
