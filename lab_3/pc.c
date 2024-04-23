@@ -30,7 +30,7 @@ void *consumer(void *arg) {
     int tid = (int) arg;
     while (tmp != -1) {
         tmp = get();
-        printf("Consumer %d get daya %d\n", tid, tmp);
+        printf("Consumer %d get data %d\n", tid, tmp);
         sleep(1);
     }
     pthread_exit(NULL);
