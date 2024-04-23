@@ -37,7 +37,7 @@ void *consumer(void *arg) {
 }
 
 int main(int argc, char **argv) {
-    int i, i;
+    int i;
     int tid[THREADS];
     pthread_t producers[THREADS];
     pthread_t consumers[THREADS];
