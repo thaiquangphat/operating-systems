@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <pthread.h>
 
-#define MAX_COUNT 10000
+#define MAX_COUNT 1e8
 int count;
 
 void *f_count(void *sid) {
