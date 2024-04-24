@@ -10,6 +10,7 @@
 int main (int argc, char *argv[], char **envp) {
     int fd = open("shared_file.txt", O_RDWR | O_CREAT, 0666);
     ftruncate(fd, 16);
+
     char *mapm = mmap(NULL, 16, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
     if (argc < 2) {
         printf("USAGE: %s read | write", argv[0]);
