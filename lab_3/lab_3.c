@@ -20,6 +20,8 @@ int main (int argc, char *argv[], char **envp) {
         printf("Mapped memory content: %s\n", mapm);
     }
     else if (strcmp(argv[1], "write\0") == 0) {
+        ftruncate(fd, 0);
+        ftruncate(fd, 16);
         sprintf(mapm, "%s", argv[2]);
     }
     else {
